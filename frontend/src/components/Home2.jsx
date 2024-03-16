@@ -37,7 +37,7 @@ const Home = () => {
 
     const getuserdata = async()=>{
       try {
-          const result = await axios.get(`http://localhost:2345/userDetail/${id}`);
+          const result = await axios.get(`https://mediguidebackend-chi.vercel.app/userDetail/${id}`);
           const response  = result.data.response;
           if(response===null||response===undefined){
               navigate(`/meditationform/${id}`)

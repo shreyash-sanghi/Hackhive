@@ -39,7 +39,7 @@ const Medatatioform = () => {
         const LName = ini_authSave.LName;
         const Number = ini_authSave.Number;
         console.log(FName);
-             const response = await axios.post(`http://localhost:2345/userDetailForm/${id}`,{
+             const response = await axios.post(`https://mediguidebackend-chi.vercel.app/userDetailForm/${id}`,{
                 Age,Bio,Email,FName,LName,Number
                })
                 alert("Successfully Save ...")
@@ -52,7 +52,7 @@ const Medatatioform = () => {
     
     const getuserprofile = async()=>{
       try {
-          let userdata = await axios.get(`http://localhost:2345/user_auth_data/${id}`);
+          let userdata = await axios.get(`https://mediguidebackend-chi.vercel.app/user_auth_data/${id}`);
           userdata = userdata.data.userdata;
          fin_auth((info)=>{
           info.FName = userdata.FName;

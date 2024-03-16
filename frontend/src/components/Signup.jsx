@@ -27,7 +27,7 @@ const SignUp = () => {
         try {
             const { FName, LName, Email, Password, Number } = initial;
             console.log(FName,LName);
-            const response = await axios.post("http://localhost:2345/signup",{
+            const response = await axios.post("https://mediguidebackend-chi.vercel.app/signup",{
                 FName, LName, Email, Password, Number
             })
             const { Token, id } = response.data;
@@ -44,7 +44,7 @@ const SignUp = () => {
 
         try {
             axios.defaults.headers.common["Authorization"] = token;
-            const response = await axios.get("http://localhost:2345");
+            const response = await axios.get("https://mediguidebackend-chi.vercel.app");
             const id = response.data.id;
             navigate(`/dashboard/${id}`)
         } catch (error) {

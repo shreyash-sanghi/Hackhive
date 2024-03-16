@@ -31,7 +31,7 @@ const Login = ()=>{
       event.preventDefault(); 
       try {
       const {Email,Password} = initial;
-     const result  = await axios.post("http://localhost:2345/login",
+     const result  = await axios.post("https://mediguidebackend-chi.vercel.app/login",
      {Email,Password});
      console.log(result);
      const status = result.status;
