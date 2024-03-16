@@ -39,6 +39,8 @@ const Home = () => {
        e.preventDefault();
        try {
          emailjs.sendForm("service_edl04xe","template_nok8by1", form.current,"fA8kcfAFIvcziEYcA")
+         alert("Thanks...")
+
        } catch (error) {
          toast(error)
        }
