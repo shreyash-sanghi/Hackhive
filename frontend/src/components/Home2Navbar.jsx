@@ -21,12 +21,8 @@ const Navbar = ()=>{
         try {
             const result = await axios.get(`https://mediguidebackend-chi.vercel.app/userDetail/${id}`);
             const response  = result.data.response;
-            if(response===null||response===undefined){
-                navigate(`/meditationform/${id}`)
-            }
-            else{
-                navigate(`/aboutdoctor/${id}`)
-            }
+           navigate(`/aboutdoctor/${id}`)
+     
         } catch (error) {
             alert(error);
             console.log(error);
