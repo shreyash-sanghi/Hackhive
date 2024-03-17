@@ -6,7 +6,8 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 // import { ClassNames } from "@emotion/react";
-
+import Home2Navbar from "./HomeNavbar";
+import Fotter from "./Fotter";
 export default function ActionAreaCard() {
   const slides = [
     {
@@ -67,7 +68,8 @@ export default function ActionAreaCard() {
 
   return (
     <>
-      <h1 className="m-2 text-4xl font-bold text-center mb-10">5 Seated meditation Poses to Make You More Flexible and Stronger</h1>
+    <Home2Navbar/>
+      <h1 className="m-2 mt-28 text-4xl font-bold text-center mb-10">5 Seated meditation Poses to Make You More Flexible and Stronger</h1>
       <div className=" flex flex-col md:flex md:flex-row justify-center items-center md:items-start m-2 ">
         {slides.map((slide) => (
           <Card sx={{ maxWidth: 345 }} style={{ margin: 5 }}>
@@ -101,9 +103,11 @@ export default function ActionAreaCard() {
               </CardContent>
             </CardActionArea>
           </Card>
+        
         ))}
         ;
       </div>
+      <Fotter/>
     </>
   );
 }

@@ -5,17 +5,14 @@ import About from './components/About'
 import Activity2 from './components/Activity2'
 import Product from './components/Product'
 import AboutDoctor from './components/AboutDoctor'
-
+import Yoga from "./components/Yoga"
+import Home from "./components/Home"
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-  <Routers/>
-  {/* <About/> */}
-  {/* <Activity2></Activity2> */}
-  {/* <Product></Product> */}
-  {/* <AboutDoctor></AboutDoctor> */}
+  <Home/>
     </>
   )
 }

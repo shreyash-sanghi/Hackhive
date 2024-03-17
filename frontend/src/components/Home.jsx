@@ -20,9 +20,10 @@ import Video from './Video'
 import emailjs from '@emailjs/browser';
 import HomeNavbar from './HomeNavbar'
 import Fotter from './Fotter'
-import { Link } from 'react-router-dom'
-import Yoga2 from "./Yoga";
+import { Link, useNavigate } from 'react-router-dom'
+
 const Home = () => {
+   const navigate = useNavigate();
     const [showMenu, setShowMenu] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
     const [iniEmail,finEmail] = useState("");
@@ -308,9 +309,9 @@ const Home = () => {
                      <div>#YOGA</div>
                   </h2>
 
-                  <a href="#" class="button follow__button">
-                     Follow <i class="ri-arrow-right-line"></i>
-                  </a>
+                  <button onClick={()=>navigate("/yoga")} href="#" class="button follow__button">
+                     Explore <i class="ri-arrow-right-line"></i>
+                  </button>
                </div>
 
                <img src={followyoga1} alt="follow image" class="follow__img-1"/>
@@ -358,7 +359,7 @@ const Home = () => {
    <a href="#" class="scrollup" id="scroll-up">
       <i class="ri-arrow-up-line"></i>
    </a>
-   <Yoga2/>
+
 <Fotter/>
     </>
   )

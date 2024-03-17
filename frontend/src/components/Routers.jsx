@@ -13,6 +13,7 @@ import Activity1 from "./Activity1";
 import Activity2 from "./Activity2";
 import Activity3 from "./Activity3";
 import Activity4 from "./Activity4";
+import Yoga from "./Yoga";
 import App from "./App";
 const Routers = ()=>{
     return(
@@ -21,6 +22,7 @@ const Routers = ()=>{
                 <Route exact path="/" Component={Home}></Route> 
                 <Route exact path="/signup" Component={SignUp}></Route> 
                 <Route exact path="/login" Component={Login}></Route> 
+                <Route exact path="/yoga" Component={Yoga}></Route> 
                 <Route exact path="/product/:id" Component={Product}></Route> 
                 <Route exact path="/meditation/:id" Component={Home2}></Route> 
                 <Route exact path="/meditationform/:id" Component={Meditationform}></Route> 
