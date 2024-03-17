@@ -21,7 +21,7 @@ import emailjs from '@emailjs/browser';
 import HomeNavbar from './HomeNavbar'
 import Fotter from './Fotter'
 import { Link } from 'react-router-dom'
-
+import Yoga2 from "./Yoga";
 const Home = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
@@ -358,6 +358,7 @@ const Home = () => {
    <a href="#" class="scrollup" id="scroll-up">
       <i class="ri-arrow-up-line"></i>
    </a>
+   <Yoga2/>
 <Fotter/>
     </>
   )
