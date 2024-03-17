@@ -7,12 +7,11 @@ const Fotter = ()=>{
       <div class="footer__container container2 grid">
          <div class="footer__content grid">
             <div>
-               <a href="#" class="footer__logo">Yoga</a>
+               <a href="#" class="footer__logo">MediGuide</a>
 
-               <p class="footer__description">
-                  Take care of your health and <br/>
-                  your mind with the best <br/>
-                  Yoga classes.
+               <p class="footer__description lg:max-w-sm">
+                  Take care of your mental & physical well <br className="hidden lg:block" /> being   with the best 
+                  exercises and mentors.
                </p>
             </div>
 
@@ -21,8 +20,8 @@ const Fotter = ()=>{
                   <h3 class="footer__title">Address</h3>
 
                   <p class="footer__info">
-                     12345 M/01 Sol <br/>
-                     Avenue, Lima, Peru
+                     12345 M/01 Navi <br/>
+                     Mumbai, G- East
                   </p>
                </div>
 
@@ -30,8 +29,8 @@ const Fotter = ()=>{
                   <h3 class="footer__title">Contact</h3>
 
                   <p class="footer__info">
-                     +123 456 7890 <br/>
-                     yoga@email.com
+                     +91 8512697435 <br/>
+                     mediguide@email.com
                   </p>
                </div>
 
@@ -74,7 +73,7 @@ const Fotter = ()=>{
             </ul>
 
             <span class="footer__copy">
-               &#169; Copyright Bedimcode. All rights reserved
+               &#169; Copyright MediGuide. All rights reserved
             </span>
          </div>
       </div>

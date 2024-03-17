@@ -14,7 +14,7 @@ const Razor = (props) => {
           key_secret:"qcdRUUWcABooj2mIAjILps56",
           amount: amount*props.price,
           currency:"INR",
-          name:"Vibes Verse",
+          name:"Its Rgpv",
           description:"Buy us a coffee",
           handler: function(response){
             alert(response.razorpay_payment_id);

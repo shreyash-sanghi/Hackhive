@@ -74,32 +74,32 @@ const Medatatioform = () => {
      },[])
   return (
     <>
-<div className='profile-div bg-center bg-no-repeat bg-cover w-full h-[100vh] pt-4'>
-<section class="max-w-6xl p-6 mx-auto rounded-md shadow-md backdrop-blur-lg">
+<div className='profile-div bg-center bg-no-repeat bg-cover md:pt-[15vh]  w-full h-[100vh] pt-4'>
+<section class="max-w-7xl p-6 mx-auto  rounded-md shadow-xl border-2 border-black backdrop-blur-lg">
     <h1 class="text-3xl font-bold  capitalize dark:">Please complete your profile ✌️</h1>
     <form>
         <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
             <div>
-                <label class=" dark:text-gray-200" for="username">Full Name</label>
-                <input id="username" type="text" value={ini_authSave.FName+" "+ini_authSave.LName} class="block  w-full px-4 py-2 mt-2 text-gray-700 bg-transparent border border-gray-300 rounded-md  dark:text-gray-300 dark:border-gray-600  dark:focus:border-red-600  "/>
+                <label class=" dark:text-gray-800" for="username">Full Name</label>
+                <input id="username" type="text" value={ini_authSave.FName+" "+ini_authSave.LName} class="block  w-full px-4 py-2 mt-2 text-gray-700 bg-transparent border border-gray-300 rounded-md  dark:text-gray-800 dark:border-gray-600  dark:focus:border-red-600  "/>
             </div>
 
             <div>
-                <label class=" dark:text-gray-200" for="emailAddress">Email Address</label>
-                <input id="emailAddress" type="email" value={ini_authSave.Email} class="block w-full px-4 py-2 mt-2 text-gray-700 bg-transparent border border-gray-300 rounded-md bg-transparent dark:text-gray-300 dark:border-gray-600  dark:focus:border-red-600 "/>
+                <label class=" dark:text-gray-800" for="emailAddress">Email Address</label>
+                <input id="emailAddress" type="email" value={ini_authSave.Email} class="block w-full px-4 py-2 mt-2 text-gray-700  border border-gray-300 rounded-md bg-transparent dark:text-gray-800 dark:border-gray-600  dark:focus:border-red-600 "/>
             </div>
 
             <div>
-                <label class=" dark:text-gray-200" for="password">Phone Number</label>
-                <input id="password" type="number" value={ini_authSave.Number} class="block w-full px-4 py-2 mt-2 text-gray-700 bg-transparent border border-gray-300 rounded-md bg-transparent dark:text-gray-300 dark:border-gray-600  dark:focus:border-red-600 "/>
+                <label class=" dark:text-gray-800" for="password">Phone Number</label>
+                <input id="password" type="number" value={ini_authSave.Number} class="block w-full px-4 py-2 mt-2 text-gray-700  border border-gray-300 rounded-md bg-transparent dark:text-gray-800 dark:border-gray-600  dark:focus:border-red-600 "/>
             </div> 
             <div>
-                <label class=" dark:text-gray-200">Age(in year)</label>
-                <input onChange={setdata} name="Age" id="date" type="number" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-transparent border border-gray-300 rounded-md bg-transparent dark:text-gray-300 dark:border-gray-600  dark:focus:border-red-600 "/>
+                <label class=" dark:text-gray-800">Age(in year)</label>
+                <input onChange={setdata} name="Age" id="date" type="number" class="block w-full px-4 py-2 mt-2 text-gray-700  border border-gray-300 rounded-md bg-transparent dark:text-gray-800 dark:border-gray-600  dark:focus:border-red-600 "/>
             </div>
             <div>
-                <label  class=" dark:text-gray-200" for="passwordConfirmation">Additonal Bio</label>
-                <textarea onChange={setdata} name="Bio" onResize={false} id="textarea" type="textarea" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-transparent border border-gray-300 rounded-md bg-transparent dark:text-gray-300 dark:border-gray-600  dark:focus:border-red-600 "></textarea>
+                <label  class=" dark:text-gray-800" for="passwordConfirmation">Additonal Bio</label>
+                <textarea onChange={setdata} name="Bio" onResize={false} id="textarea" type="textarea" class="block w-full px-4 py-2 mt-2 text-gray-700  border border-gray-300 rounded-md bg-transparent dark:text-gray-800 dark:border-gray-600  dark:focus:border-red-600 "></textarea>
             </div>
             {/* <div>
                 <label class="block text-sm font-medium ">

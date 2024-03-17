@@ -103,5 +103,19 @@ router.post("/userDetailForm/:id",async(req,res)=>{
       res.sendStatus(404);
   }
 })
+router.post("/settimer/:id",async(req,res)=>{
+  try {
+      const id = req.params.id;
+         const response =  await Register.findById(id);
+         console.log(response)
+          // const result = await userdata.create({
+          //   Age,Bio,Email,FName,LName,Number
+          //     })
+   res.sendStatus(202);
+  } catch (error) {
+      console.log(error);
+      res.sendStatus(404);
+  }
+})
 
 module.exports = router;

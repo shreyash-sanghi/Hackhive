@@ -874,7 +874,11 @@ body.dark-theme {
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px ) and (min-width: 345px ) {
+  .home__title {
+    font-size: 3rem;
+  }
+
   .home__container,
   .list__container,
   .health__container,
@@ -884,6 +888,7 @@ body.dark-theme {
     grid-template-columns: 350px;
     justify-content: center;
   }
+  
 }
 
 @media screen and (min-width: 767px) {

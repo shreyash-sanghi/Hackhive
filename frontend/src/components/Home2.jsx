@@ -39,12 +39,8 @@ const Home = () => {
       try {
           const result = await axios.get(`https://mediguidebackend-chi.vercel.app/userDetail/${id}`);
           const response  = result.data.response;
-          if(response===null||response===undefined){
-              navigate(`/meditationform/${id}`)
-          }
-          else{
-              navigate(`/aboutdoctor/${id}`)
-          }
+          navigate(`/aboutdoctor/${id}`)
+  
       } catch (error) {
           alert(error);
           console.log(error);
@@ -129,7 +125,7 @@ const Home = () => {
                </p>
 
                <button onClick={getuserdata}  class="button">
-                  Doctor <i class="ri-arrow-right-line"></i>
+                  Chat With Expert's <i class="ri-arrow-right-line"></i>
                </button>
 
                <div class="home__box">
